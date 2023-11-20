@@ -14,7 +14,8 @@ let userEmail;  // undefined
 const id  = Symbol('123') // Symbol
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);  
+console.log(id === anotherId);  // false show karega because humne yaha par symbol ka use kiya hai
+
 
 const bigNumber = 3325541654616543518654n  // bigInt
 
