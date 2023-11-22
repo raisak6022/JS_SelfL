@@ -6,7 +6,7 @@ const dc_heros = ["superman", "flash", "batman"];
 // console.log(marvel_heros);
 // console.log(marvel_heros[3][1]);
 
-// const allHeros = marvel_heros.concat(dc_heros) // yeh return karta hai new array & properly merge kar ke deta hai
+// const allHeros = marvel_heros.concat(dc_heros) // yeh return karta hai new array & properly merge kar ke deta hai   && esko hume esko naye array mai hold karna hota hai because it returns a new array it witll not work on existing arraay 
 // console.log(marvel_heros);
 // console.log(allHeros);
 
