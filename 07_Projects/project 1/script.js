@@ -11,16 +11,16 @@ buttons.forEach(function (button) {
 
         switch (e.target.id) {
             case 'grey':
-                body.style.backgroundColor = "grey"
+                body.style.backgroundColor = e.target.id
                 break;
             case 'coral':
-                body.style.backgroundColor = "coral"
+                body.style.backgroundColor = e.target.id
                 break;
             case 'khaki':
-                body.style.backgroundColor = "khaki"
+                body.style.backgroundColor = e.target.id
                 break;
             case 'yellow':
-                body.style.backgroundColor = "yellow"
+                body.style.backgroundColor = e.target.id
                 break;
         }
     })
