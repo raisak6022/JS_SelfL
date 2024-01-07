@@ -13,11 +13,12 @@ const course = {
 
 
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor, price:rs , coursename: naam} = course
 
 // console.log(courseInstructor);
 console.log(instructor);
-
+console.log(rs);
+console.log(naam);
 
 
 // json 
