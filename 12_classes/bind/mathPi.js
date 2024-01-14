@@ -1,11 +1,14 @@
-// in this example we see why that why the constant valuw of pi is not writable/ changeable eg. of pi 
-const descriptor = Object.getOwnPropertyDescriptor(Math, "PI");
+//  this is important for interview perspective
+// in this example we see why that why the constant value of pi is not writable/ changeable eg. of Math.PI
+
+const descriptor = Object.getOwnPropertyDescriptor(Math, "PI"); // Math ek mosule hai but PI ek property hai jiski value hai 3.145~~
 console.log(descriptor);
 
 // console.log(Math.PI)
 // Math.PI = 5
 //  console.log(Math.PI)
 
+//  we can also create object by using this line
 // const myNewObject = Object.create(null)
 
 const chai = {
@@ -20,6 +23,7 @@ const chai = {
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
+// yaha par hum humari property ko disrrupt bhi kar sakte hai
 Object.defineProperty(chai, "name", {
   writable: false,
   enumerable: false,
@@ -27,12 +31,18 @@ Object.defineProperty(chai, "name", {
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
-
+// properties lagane ke baad humari value me se name ko hum change nahi kar sakte hai to humri name property loop se bahar ho gayi hai
 for (let [key, value] of Object.entries(chai)) {
   if (typeof value !== "function") {
     console.log(`${key} = ${value}`);
   }
 }
+
+
+
+
+
+
 
 // Key Points:
 // !== ensures strict inequality, preventing unintended function calls.
